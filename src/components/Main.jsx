@@ -1,13 +1,16 @@
 import React from "react";
+import Header from './Header'
 
-export default function AppMain(){
+export default function AppMain
+        ({icon, title, subtitle, children}){
     return(
-        <main className="maincontent"> 
-            <h1> Main</h1>
-            <hr></hr>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum voluptate, veritatis labore omnis quia, autem fuga harum eligendi debitis vitae provident at laudantium, deserunt velit qui! Delectus, consequuntur minima?
-            </p>
-        </main>
+        <React.Fragment>
+            <Header icon={ icon } title={ title } subtitle={ subtitle }>
+
+            </Header>
+            <main className="maincontent"> 
+                { children }
+            </main>
+        </React.Fragment>
     )
 }

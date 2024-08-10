@@ -1,13 +1,13 @@
 import React from "react";
+import Main from '../components/Main'
 
 export default function AppAbout(){
     return(
-        <div>
-            <h1> SOBRE OS PROJETOS </h1>
-            <hr></hr>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum voluptate, veritatis labore omnis quia, autem fuga harum eligendi debitis vitae provident at laudantium, deserunt velit qui! Delectus, consequuntur minima?
-            </p>
-        </div>
+        <Main icon='info' title='SOBRE' subtitle='NODE + REACT'>
+            <div>
+                <h1>Sobre</h1>
+                <p>Tudo sobre React</p>
+            </div>
+        </Main>
     )
 }

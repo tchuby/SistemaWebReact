@@ -1,13 +1,28 @@
 import React from "react";
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faInfo, faUser } from '@fortawesome/free-solid-svg-icons';
+import './Nav.css';
 
 export default function AppNav(){
     return(
         <aside className="menu-area">
-            <h1> Nav</h1>
-            <hr></hr>
-            <p>
-                Lorem Nav ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum voluptate, veritatis labore omnis quia, autem fuga harum eligendi debitis vitae provident at laudantium, deserunt velit qui! Delectus, consequuntur minima?
-            </p>
+
+            <Link to="/">
+                <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                Início
+            </Link>
+
+            <Link to="/About">
+                <FontAwesomeIcon icon={faInfo}></FontAwesomeIcon>
+                Sobre
+            </Link>
+
+            <Link to="/User">
+                <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                Perfil
+            </Link>
+
         </aside>
     )
 }

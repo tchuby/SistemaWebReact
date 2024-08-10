@@ -6,8 +6,8 @@ import './Logo.css';
 export default function AppLogo(){
     return(
         <aside className="logo">
-            <Link to="/" className="logo">
-                <img className="imgClass" src={logo} alt="Logo da página"/>
+            <Link to="/">
+                <img className="linkLogo" src={logo} alt="Logo da página"/>
             </Link>
         </aside>
     )

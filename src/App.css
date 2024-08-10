@@ -2,7 +2,7 @@
   --bg-dark: #000;
 
   --logo-height: 100px;
-  --logo-width: 200px;
+  --logo-width: 100px;
   --header-height: 100px;
   --nav-height: 100px;
   --main-height: 100vh;
@@ -26,6 +26,7 @@ grid-template-areas: "logo header"
                       "nav nav"
                       "content content"
                       "footer footer";
+  background-color: blue;
 }
 
 aside.logo{
@@ -40,10 +41,10 @@ aside.menu-area{
   grid-area: nav;
 }
 
-footer.footer{
-  grid-area: footer;
-}
-
 main.maincontent{
   grid-area: content;
+}
+
+footer.footer{
+  grid-area: footer;
 }
