@@ -1,22 +1,10 @@
 import React from "react";
 import "./Header.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faInfo, faUser } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function AppHeader({ icon, title }) {
 
-    const getIcon = (icon) => {
-        switch (icon) {
-            case 'home':
-                return <FontAwesomeIcon icon={faHome} />;
-            case 'info':
-                return <FontAwesomeIcon icon={faInfo} />;
-            case 'user':
-                return <FontAwesomeIcon icon={faUser} />;
-            default:
-                return null;
-        }
-    };
+
 
     return (
         <header className="header">
